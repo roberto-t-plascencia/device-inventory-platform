@@ -1,0 +1,11 @@
+body { font-family: system-ui, sans-serif; margin: 0; padding: 16px; background: #f6f7f9; color: #1d2330; }
+nav { display: flex; gap: 8px; margin-bottom: 16px; flex-wrap: wrap; }
+nav button { padding: 6px 12px; border: 1px solid #c9ced8; background: #fff; border-radius: 6px; cursor: pointer; }
+nav button.active { background: #1d2330; color: #fff; }
+table { border-collapse: collapse; width: 100%; background: #fff; }
+th, td { text-align: left; padding: 6px 10px; border-bottom: 1px solid #e3e6ec; font-size: 14px; }
+.error { color: #b42318; }
+.field { display: flex; flex-direction: column; margin-bottom: 10px; max-width: 320px; }
+.field input { padding: 6px; }
+.badge { padding: 2px 8px; border-radius: 10px; font-size: 12px; background: #e3e6ec; }
+.badge.online { background: #d1fadf; } .badge.error { background: #fee4e2; } .badge.provisioning { background: #fef0c7; }

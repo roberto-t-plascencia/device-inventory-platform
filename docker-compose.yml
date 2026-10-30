@@ -1,0 +1,13 @@
+# Run the whole stack locally:  docker compose up --build   ->  http://localhost:8080
+services:
+  api:
+    build:
+      context: ./api
+      args: { APP_VERSION: compose }
+    environment: { LOG_LEVEL: debug }
+    ports: ["5000:5000"]
+  web:
+    build: ./web
+    environment: { API_UPSTREAM: "api:5000" }
+    ports: ["8080:8080"]
+    depends_on: [api]
